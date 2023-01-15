@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Lusitana);
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #1a1600;
+  font-family: 'Noto Serif JP', serif;
+}
+/* 後ろの背景のやつ */
+#header {
+  background: url(https://minntogames.github.io/frandre-bot.github.io/images/head_fran.png) no-repeat center top;
+  background-size: cover;
+  position: fixed;
+  height: 90%;
+  bottom: 10%;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+#header .center {
+  background: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  position: absolute;
+  color: #FFFFFF;
+  color: #e6c300;/*文字ヘッダー*/
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+#header .center .middle {
+  position: absolute;
+  margin-top: -8em;
+  right: 0;
+  left: 0;
+  top: 50%;
+}
+#header .center .middle h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: normal;
+  line-height: 1em;
+  font-size: 5em;
+  margin: 0;
+}
+
+#header .center .middle span {
+  line-height: 5em;
+  font-size: 1em;
+}
+#pageHr {
+  background: #e6c300;
+  position: relative;
+  height: 5px;
+  display: block;
+  right: 0px;
+  left: 0px;
+  top: 90%;
+  z-index: 1;
+}
+#pageHr > i {
+  margin: -25px;
+  border: 5px solid #e6c300;
+  height: 40px;
+  width: 40px;
+  background: #1a1600;
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#pageHr > i > i {
+  line-height: 36.8px;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  position: absolute;
+  color: #FFFFFF;
+  display: block;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#page {
+  background: #1a1600;
+  position: relative;
+  color: #FFFFFF;
+  height: 100%;/*はいけいのばす*/
+  top: 90%;
+  padding: 10% 0px;
+  text-align: center;
+}
+#page a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* フッター */
+#page .footer01 {
+ color: #000000;
+ background: #e6c300;
+ padding: 30px;
+}
+#page .a:hover {
+ text-decoration: underline;
+}
+#page .menu {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ display: flex;
+ flex-wrap: wrap;
+}
+#page li {
+ margin: 0;
+ padding: 0 20px 0 0;
+}
+#page .copyright {
+ margin: 0;
+ padding: 20px 0 0 0;
+}
+/* でてくるやつ */
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 2px solid #e8f380;
+  position: absolute;
+  bottom: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -26px;
+}
+
+/* aaa */
+.brand {
+  position: fixed;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px; }
+ 
+.site-header {
+  text-decoration: none;
+  position: relative;
+}
+ 
+.site-header__wrapper {
+  text-decoration: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 600px) {
+    .site-header__wrapper {
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0; } }
+@media (min-width: 600px) {
+  .nav__wrapper {
+    display: flex;
+    text-decoration: none;} }
+ 
+@media (max-width: 599px) {
+  .nav__wrapper {
+    text-decoration: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #d9f0f7;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+    .nav__wrapper.active {
+      text-decoration: none;
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); } }
+ 
+.nav__item a {
+  text-decoration: none;
+  display: block;
+  padding: 1.5rem 1rem; }
+ 
+.nav__toggle {
+  text-decoration: none;
+  display: none;}
+  @media (max-width: 599px) {
+    .nav__toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem; } }
