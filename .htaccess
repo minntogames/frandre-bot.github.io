@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.minntogames.github.io/frandre-bot.github.io\$
+RewriteRule ^(.*)$ https://minntogames.github.io/frandre-bot.github.io/$1 [R=301,L]
+ErrorDocument 404 /404.html
