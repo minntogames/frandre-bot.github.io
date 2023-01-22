@@ -46,7 +46,6 @@ body {
   font-size: 5em;
   margin: 0;
 }
-
 #header .center .middle span {
   line-height: 5em;
   font-size: 1em;
@@ -90,12 +89,16 @@ body {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
-#page {
+#page { 
   background: #1a1600;
   position: relative;
   color: #FFFFFF;
-  height: 100%;/*はいけいのばす*/
+  height: auto;/*はいけいのばす*/
+  @media (max-width:767px) { 
+    #page {
+      height: 150%;
+    }
+  }
   top: 90%;
   padding: 10% 0px;
   text-align: center;
@@ -142,7 +145,6 @@ body {
   left: 50%;
   margin-left: -26px;
 }
-
 /* aaa */
 .brand {
   position: fixed;
@@ -205,3 +207,30 @@ body {
       position: absolute;
       right: 1rem;
       top: 1rem; } }
+
+/* hedder */
+
+ .header1 {
+    /* flexboxの設定 */
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    /* フォントや色の設定 */
+    height: 70px;
+    font-size: 18px;
+    background-color: rgba(255,165,0,0.1);
+}
+
+.header-menu {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+.header-menu__item {
+    margin: 0 25px;
+}
+.header1 a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
