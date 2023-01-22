@@ -1,0 +1,28 @@
+.box10 {
+    padding: 0.5em 1em;
+    margin: 30px;
+    color: #ffa600;
+    background: #ffdb99;/*背景色*/
+    border-top: solid 6px #ffa600;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+    position: relative;
+    top: 70%;
+}
+.box10 p {
+    margin: 0; 
+    padding: 0;
+}
+.box10 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex {
+  display: flex;
+}
+.ff1 {
+  flex-grow: 1;
+}
+.ff2{
+  flex-grow: 1;
+}
