@@ -176,7 +176,6 @@ ul li {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* ドロップシャドウ */
     position: relative; /* 相対位置指定 */
 
-    /* ::before疑似要素を使用して左端の背景色を設定 */
     &::before {
         content: ''; /* 疑似要素の内容を空に設定 */
         background-color: #5a64ea; /* Discordのブルー */
