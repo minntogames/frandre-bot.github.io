@@ -1,0 +1,112 @@
+<!-- ここのコード見てもいいことないわよ。 -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フランのお部屋：Document</title>
+    <link rel="stylesheet" href="./css/doc-styles.css">
+  </head>
+  <body>
+    <header class="fixed-header">
+      <div class="header-text">
+        <span class="desktop-text">
+          <span><a href="index.html">Home</a></span>
+          <span><a href="admin.html">Admin</a></span>
+          <span>Document</span>
+          <span><a href="admin.html">Support server</a></span>
+          <span><a href="invite.html">Invite</a></span>
+        </span>
+        <span class="mobile-text">
+          <span><a href="index.html"><img src="images/ico/home.png"></a></span>
+          <span><a href="admin.html"><img src="images/ico/renchi.png"></a></span>
+          <span><!--   now page   --><img src="images/ico/docu.png"></span>
+          <span><a href="admin.html"><img src="images/ico/supoot.png"></a></span>
+          <span><a href="invite.html"><img src="images/ico/yazi.png"></a></span>
+        </span>
+      </div>
+    </header>
+    <div class="content">
+      <aside class="sidebar">
+        <div class="scrollable">
+          <p style="text-align: center" id="section1"><img src="https://minntogames.github.io/frandre-bot.github.io/images/ico/logo.png" style="text-align: center; max-width: 100%; height: auto"></p>
+          <h2 class="colors">まず最初に</h2>
+          <p>
+            このBotは個人で運営しています。<br>
+            あとタダのサイトでBotを開発しているので基本的な利用は無料です。<br />
+            てかお金がかかるような機能はないです。
+            <h6 style="margin: 0px; margin-top: -20px"><span style="color: #2e2d20">あのもしよかったらなんですけど開発協力してくれませんk(殴)</span></h6>
+            このページの目的はフランBotの使い方を<br>
+            わかりやすく解説するページです。<br>
+            スラッシュコマンドにオプションがついているもののみを解説していきます。
+          </p>
+          <h2 id="section2" class="colors"><br><br>スラッシュコマンド</h2>
+          <p>
+            スラッシュコマンド名の先頭の<span class="inl">ad</span>は管理者専用という意味です。<br>
+            権限は管理者(<span class="inl">administrator</span>)が必要です。
+          </p>
+          <h2 id="section3" class="colors"><br><br>ad-authentication-settings</h2>
+          <p>
+            ボタンや計算の認証を追加するコマンドです。<br><br>
+            ・ボタン認証<br><br>
+            ボタン認証は以下の
+            <div class="discord-embed">
+              <div class="embed-header">
+                  認証！！
+              </div>
+              <div class="embed-content">
+                  下のボタンを押したら認証できるよ！
+              </div>
+            </div><br>
+            <button class="discord-button">認証！</button><br>
+            のボタンを押すとロールが付与される機能です。(イメージ)<br>
+            この認証方法はボタンを押すだけでロールが付与されるので<br>
+            セキュリティ力が低めです。<br><br>
+            ・計算認証<br><br>
+            こちらは<span class="inl">ボタン認証</span> + 計算問題が加えられたものです。<br>
+            セキュリティ力がボタン認証より高く、足し、引き、掛け算の中からランダムに選ばれ出題されます。<br>
+            そして正答するとロールが付与される仕組みになっています。<br><br>
+            【コマンドオプション】<br><br>
+            <span class="inl">format:</span>ボタン形式か計算式形式を選択できます。(必須オプション)<br><br>
+            <span class="inl">role:</span>認証完了時に付与させたいロールを指定します。(必須オプション)<br><br>
+            <span class="inl">title:</span>埋め込みのタイトルテキストを変更できます。<br><br>
+            <span class="inl">color:</span>埋め込みの色が変更できます、デフォルトはランダムです。色指定は基本HEXカラーコードを入れて下さい。<br><br>
+            <span class="inl">description:</span>埋め込みの説明を変更できます。デフォルトは空白です<br><br>
+            <span class="inl">footer:</span>埋め込みのフッターテキストを変更できます<br><br>
+            <span class="inl">button-name:</span>ボタンの名前を変更できます。<br><br>
+            <div class="lastupdate">2023/10/12 5:58</div>
+        </p>
+          <h2 id="section4" class="colors"><br><br>ad-lvup-notice</h2>
+          <p>
+            レベルアップ時のレベルアップ通知のチャンネルを指定する管理者用のコマンドです。(レベリング機能が有効の場合のみ実行可)<br><br>
+            【コマンドオプション】<br><br>
+            <span class="inl">channel:</span>通知するチャンネルを指定します。(必須オプション)<br><br>
+            <div class="lastupdate">2023/10/12 5:58</div>
+          </p>
+          <h2 id="section5" class="colors"><br><br>rank</h2>
+          <p>
+            Lv、XPなどが確認できるコマンドです。(レベリング機能が有効の場合のみ実行可)<br><br>
+            【コマンドオプション】<br><br>
+            <span class="inl">target:</span>他の人のLvも確認できます。<br><br>
+            <div class="lastupdate">2023/10/12 5:58</div>
+          </p>
+        </div>
+      </aside>
+      <main class="main-content">
+        <div class="scrollable">
+          <h2>目次</h2>
+          <ul>
+            <li><a href="#section1"><span class="sec">・最初に</span></a></li>
+            <li><h3>スラッシュコマンド</h3></li>
+            <li><a href="#section2"><span class="sec">・ｽﾗｯｼｭｺﾏﾝﾄﾞのadについて</span></a></li>
+            <li><a href="#section3"><span class="sec">・ad-authentication-settings</span></a></li>
+            <li><a href="#section4"><span class="sec">・ad-lvup-notice</span></a></li>
+            <li><a href="#section5"><span class="sec">・rank</span></a></li>
+            <!-- add? -->
+          </ul>
+        </div>
+      </main>
+    </div>
+    <script src="./java/doc-script.js"></script>
+  </body>
+</html>
