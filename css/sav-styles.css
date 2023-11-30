@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Lusitana);
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px; /* ヘッダーの高さを設定 */
+    background-color: #ffe100; /* ヘッダーの背景色 */
+    color: #000000; /* ヘッダーのテキスト色 */
+    padding: 10px 0; /* ヘッダー内の余白 */
+    text-align: center;
+    z-index: 2
+}
+
+
+/* ヘッダー内のテキストを均等に配置するためのスタイル */
+.header-text {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ヘッダー内の各文字要素のスタイル */
+.header-text span {
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.header-text a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; /* 左右に分割 */
+}
+
+/* 左側の詳細コンテンツのスタイル */
+.sidebar {
+    width: 100%;
+    background-color: #2e2d28;
+    color: #FFFFFF; 
+    padding: 20px;
+    overflow-y: auto; /* 垂直方向のスクロールを有効にする */
+    max-height: calc(100vh - 40px); /* コンテンツが画面内に収まるようにする（ヘッダーの高さを考慮） */
+}
+
+.lastupdate {
+  color: #aaaaaa;
+  text-align: right;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 7px;
+  height: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #2e2d28;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+ background: #ffe100;
+}
+
+/* 右側の目次コンテンツのスタイル */
+.main-content {
+    width: 30%;
+    background-color: #1c1c18;
+    color: #FFFFFF;
+    padding: 20px;
+    overflow-y: auto; /* 垂直方向のスクロールを有効にする */
+    max-height: calc(100vh - 40px); /* コンテンツが画面内に収まるようにする（ヘッダーの高さを考慮） */
+}
+
+.main-content a {
+  color: #FFFFFF;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.1s;
+  
+  &:hover {
+    color: #ffe100;
+    transition: color 0.3s;
+  }
+}
+
+.main-content h2 {
+  text-align: center;
+}
+
+
+.main-content h3 {
+  margin-top:0px;
+  margin-bottom:0px;
+
+}
+
+.inl {
+  background-color: #1c1c18;
+  margin: 0px;
+  color: #ffffff; /* テキストカラー */
+}
+
+.sec {
+  margin-left: 0px;
+}
+
+.colors {
+ color: #ffe100; 
+}
+
+.main-content::-webkit-scrollbar {
+  width: 7px;
+  height: 0px;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: #1c1c18;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+ background: #ffe100;
+}
+
+
+/* 目次と詳細内のリストのスタイル */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+/* 各コンテンツ内のスクロール可能領域のスタイル */
+.scrollable {
+    padding-top: 40px; /* ヘッダーの高さ + ヘッダー内余白分だけコンテンツを下げる */
+    overflow: hidden; /* 縦方向のスクロールを有効にする */
+    overflow-x: hidden; /* 横スクロールを無効にする */
+}
+
+.discord-button {
+    background-color: #5a64ea; /* Discordのブルー */
+    color: #ffffff; /* 白色のテキスト */
+    border: none; /* ボーダーなし */
+    padding: 7px 15px; /* パディングを調整 */
+    border-radius: 5px; /* 角丸 */
+    cursor: pointer; /* ポインターを変更してホバー時に反応感を持たせる */
+    font-size: 16px; /* フォントサイズを設定 */
+    transition: background-color 0.3s; /* カラー変化のトランジションを設定 */
+
+    /* ホバー時のスタイル */
+    &:hover {
+        background-color: #222c5c; /* ホバー時のカラー変化 */
+        color: #474961;
+    }
+}
+
+/* Discord風のEmbedのスタイル */
+.discord-embed {
+    background-color: #36393f; /* 背景色 */
+    color: #ffffff; /* テキストカラー */
+    border: 0px solid #2e3338; /* ボーダー */
+    border-radius: 5px; /* 角丸 */
+    padding: 10px;
+    width: 300px; /* 幅を調整 */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* ドロップシャドウ */
+    position: relative; /* 相対位置指定 */
+
+    /* ::before疑似要素を使用して左端の背景色を設定 */
+    &::before {
+        content: ''; /* 疑似要素の内容を空に設定 */
+        background-color: #5a64ea; /* Discordのブルー */
+        width: 5px; /* 左端の幅を調整 */
+        position: absolute; /* 絶対位置指定 */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-top-left-radius: 5px; /* 角丸を反映 */
+        border-bottom-left-radius: 5px; /* 角丸を反映 */
+    }
+}
+
+/* Embedのヘッダー部分のスタイル */
+.embed-header {
+    color: #ffffff; /* テキストカラー */
+    padding: 8px;
+    font-weight: bold;
+}
+
+/* Embedのコンテンツ部分のスタイル */
+.embed-content {
+    padding: 8px;
+}
+
+.numbered-list {
+  counter-reset: section;
+  list-style: none;
+  padding: 0; /* デフォルトのパディングを削除 */
+}
+
+/* 各アイテムにカウンターを表示 */
+.numbered-list li {
+  margin-left: 2em; /* li要素を左に寄せる距離 */
+  position: relative;
+}
+
+.numbered-list li::before {
+  counter-increment: section;
+  content: counter(section)".";
+  font-size: 1.5em; /* 大きい数字のサイズを設定 */
+  margin-right: 0.5em; /* 数字とテキストの間に余白を設定 */
+  color: #ffaa00; /* 数字の色を設定（任意の色） */
+  position: absolute;
+  left: -1em; /* 数字を左に寄せる距離 */
+  top: 0em;
+}
